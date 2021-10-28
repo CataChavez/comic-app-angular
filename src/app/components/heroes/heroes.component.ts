@@ -1,4 +1,3 @@
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HeroesService, Heroe } from 'src/app/service/heroes.service';
@@ -20,7 +19,5 @@ export class HeroesComponent implements OnInit {
     this.heroes = this._heroesService.getHeroes();
 
   }
-  seeHeroe(index: number){
-    this.router.navigate( ['/heroe', index] )
-  }
+
 }
