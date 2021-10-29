@@ -11,6 +11,6 @@
       </div>
     </div>
 
-    <app-heroe-card [heroe]="heroe" [index]="i" *ngFor="let heroe of heroes, let i = index;">
+    <app-heroe-card [heroe]="heroe" [index]="heroe.index" *ngFor="let heroe of heroes">
     </app-heroe-card>
   

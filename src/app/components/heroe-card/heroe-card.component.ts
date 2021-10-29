@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,9 +11,10 @@ export class HeroeCardComponent implements OnInit {
   @Input() index: any;
 
   constructor(
-    private router: Router 
-    
+    private router: Router,
+
   ) { }
+  
 
   
   ngOnInit(): void {
